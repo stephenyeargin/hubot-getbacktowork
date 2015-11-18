@@ -7,10 +7,10 @@
   "keywords": "hubot, hubot-scripts, get back to work",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-getbacktowork.git"
+    "url": "git://github.com/stephenyeargin/hubot-getbacktowork.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-getbacktowork/issues"
+    "url": "https://github.com/stephenyeargin/hubot-getbacktowork/issues"
   },
   "dependencies": {},
   "peerDependencies": {
