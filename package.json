@@ -1,7 +1,7 @@
 {
   "name": "hubot-getbacktowork",
   "description": "When the GIFs and YouTube links get out of control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Stephen Yeargin <stephen.yeargin@gmail.com>",
   "license": "MIT",
   "keywords": "hubot, hubot-scripts, get back to work",
