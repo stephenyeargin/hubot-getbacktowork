@@ -1,16 +1,35 @@
+Helper = require('hubot-test-helper')
 chai = require 'chai'
-sinon = require 'sinon'
-chai.use require 'sinon-chai'
+nock = require 'nock'
 
 expect = chai.expect
 
+helper = new Helper [
+  '../src/getbacktowork.coffee'
+]
+
 describe 'getbacktowork', ->
   beforeEach ->
-    @robot =
-      respond: sinon.spy()
-      hear: sinon.spy()
+    @room = helper.createRoom()
 
-    require('../src/getbacktowork')(@robot)
+  afterEach ->
+    @room.destroy()
 
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/(?:gbtw|get back to work|back to work)/i)
+  # hubot gbtw
+  it 'responds with a gif', (done) ->
+    selfRoom = @room
+    selfRoom.user.say('alice', '@hubot gbtw')
+    setTimeout(() ->
+      try
+        expect(selfRoom.messages[0]).to.eql [
+          'alice',
+          '@hubot gbtw'
+        ]
+        expect(selfRoom.messages[1][1]).to.match(
+          /https\:\/\/user-images\.githubusercontent\.com\/(.*)\.(jpg|gif|png)/
+        )
+        done()
+      catch err
+        done err
+      return
+    , 1000)

@@ -1,14 +1,11 @@
 # Description
 #   When the GIFs and YouTube links get out of hand
 #
-# Configuration:
-#   None.
-#
 # Commands:
 #   hubot gbtw - Tells everyone to get back to work
 #
 # Author:
-#   Stephen Yeargin <stephen@yearg.in>
+#   stephenyeargin
 
 gbtw_messages = [
   'https://user-images.githubusercontent.com/80459/31158516-dc3e9ab8-a887-11e7-94af-7dbb60c82a54.jpg',

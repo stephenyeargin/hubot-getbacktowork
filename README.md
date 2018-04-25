@@ -1,4 +1,6 @@
-# hubot-getbacktowork
+# Hubot Get Back to Work
+
+[![npm version](https://badge.fury.io/js/hubot-getbacktowork.svg)](http://badge.fury.io/js/hubot-getbacktowork) [![Build Status](https://travis-ci.org/stephenyeargin/hubot-getbacktowork.png)](https://travis-ci.org/stephenyeargin/hubot-getbacktowork)
 
 When the GIFs and YouTube links get out of control.
 
