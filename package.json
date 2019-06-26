@@ -29,7 +29,7 @@
     "matchdep": "^2.0.0",
     "mocha": "^6.1.3",
     "nock": "^10.0.6",
-    "release-it": "^10.4.2",
+    "release-it": "^12.3.0",
     "sinon": "^7.3.1",
     "sinon-chai": "^3.3.0"
   },
