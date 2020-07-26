@@ -21,8 +21,8 @@ Then add **hubot-getbacktowork** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot gbtw
-hubot>> http://paleochef.com/wp-content/uploads/2014/04/GET-BACK-TO-WORK-21-RIGHT-MEOW-21.jpg
+user1> hubot gbtw
+hubot> https://user-images.githubusercontent.com/80459/31158517-dc3ec7a4-a887-11e7-8959-933a63d9f96f.gif
 ```
 
 ## Inspiration
