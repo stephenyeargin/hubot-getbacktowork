@@ -5,11 +5,7 @@ notifications:
 node_js:
   - "14" # stable
   - "12" # LTS
-<<<<<<< HEAD
-  - "10"  # maintenance
-=======
   - "10" # maintenance
->>>>>>> origin/master
 cache:
   directories:
     - node_modules
