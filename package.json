@@ -5,7 +5,7 @@
   "author": "Stephen Yeargin <stephen@yearg.in>",
   "homepage": "https://github.com/stephenyeargin/hubot-getbacktowork",
   "license": "MIT",
-  "keywords": "hubot, hubot-scripts, get back to work",
+  "keywords": ["hubot", "hubot-scripts", "get back to work"],
   "repository": {
     "type": "git",
     "url": "git://github.com/stephenyeargin/hubot-getbacktowork.git"
