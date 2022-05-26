@@ -1,6 +1,6 @@
 # Hubot Get Back to Work
 
-[![npm version](https://badge.fury.io/js/hubot-getbacktowork.svg)](http://badge.fury.io/js/hubot-getbacktowork) [![Build Status](https://app.travis-ci.com/stephenyeargin/hubot-getbacktowork.png)](https://app.travis-ci.com/stephenyeargin/hubot-getbacktowork)
+[![npm version](https://badge.fury.io/js/hubot-getbacktowork.svg)](http://badge.fury.io/js/hubot-getbacktowork) [![Node CI](https://github.com/stephenyeargin/hubot-getbacktowork/actions/workflows/nodejs.yml/badge.svg)](https://github.com/stephenyeargin/hubot-getbacktowork/actions/workflows/nodejs.yml)
 
 When the GIFs and YouTube links get out of control.
 
