@@ -1,45 +1,13 @@
-/* global describe beforeEach afterEach it */
-/* eslint-disable func-names */
-const Helper = require('hubot-test-helper');
-const chai = require('chai');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const { createTestBot } = require('./common/TestBot');
 
-const {
-  expect,
-} = chai;
-
-const helper = new Helper([
-  '../src/getbacktowork.js',
-]);
-
-describe('getbacktowork', () => {
-  beforeEach(function () {
-    this.room = helper.createRoom();
-  });
-
-  afterEach(function () {
-    this.room.destroy();
-  });
-
-  // hubot gbtw
-  it('responds with a gif', function (done) {
-    const selfRoom = this.room;
-    selfRoom.user.say('alice', '@hubot gbtw');
-    setTimeout(
-      () => {
-        try {
-          expect(selfRoom.messages[0]).to.eql([
-            'alice',
-            '@hubot gbtw',
-          ]);
-          expect(selfRoom.messages[1][1]).to.match(
-            /https:\/\/user-images\.githubusercontent\.com\/(.*)\.(jpg|gif|png)/,
-          );
-          done();
-        } catch (err) {
-          done(err);
-        }
-      },
-      100,
-    );
-  });
+test('responds with a gif', async () => {
+  const ctx = await createTestBot();
+  try {
+    const response = await ctx.sendAndWaitForResponse('@hubot gbtw');
+    assert.match(response, /https:\/\/user-images\.githubusercontent\.com\/(.*)\.(jpg|gif|png)/);
+  } finally {
+    ctx.shutdown();
+  }
 });

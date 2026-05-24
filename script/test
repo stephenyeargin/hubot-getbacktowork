@@ -3,4 +3,12 @@
 # bootstrap environment
 source script/bootstrap
 
-mocha "test/**/*.js" --reporter spec --exit
+# Collect test files in a shell-agnostic way for Node 20 compatibility.
+test_count=$(find test -type f -name '*-test.js' | wc -l | tr -d ' ')
+
+if [ "$test_count" -eq 0 ]; then
+	echo "No test files matched test/**/*-test.js"
+	exit 1
+fi
+
+find test -type f -name '*-test.js' -print0 | xargs -0 node --test
