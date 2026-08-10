@@ -27,7 +27,7 @@
     "eslint-plugin-n": "^16.5.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^9.1.7",
-    "nock": "^13.4.0",
+    "nock": "^14.0.17",
     "hubot": "^14"
   },
   "main": "index.js",
